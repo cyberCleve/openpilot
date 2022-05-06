@@ -74,7 +74,7 @@ inline half val_from_12(const uchar * source, int gx, int gy, half black_level) 
     pv = s * pv;
   }
 
-  pv = clamp(pv, 0.0, 1.0);
+  pv = clamp(pv, ((half))0.0, ((half))1.0);
   return pv;
 }
 
